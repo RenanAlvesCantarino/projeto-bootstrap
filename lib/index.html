@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        
+    
+    .navbar-nav .nav-link {
+        color:#fff;
+    }
+    section {
+        background-color: rgb(22, 20, 20);
+        padding-top: 70px;
+    }
+    .carousel-item> img {
+        height: 500px;
+    }
+    h2,h4,h5{
+        color: #fff;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+    a img {
+        height: 150px;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <!--Cabeçalho-->
+
+    <header id="cabecalho"  class="text-light bg-dark bg-opacity-75 w-100 sticky-top">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="https://images.icon-icons.com/2699/PNG/512/netflix_logo_icon_170919.png" width="50x50" alt="h">
+                <button type="button" class="navbar-toggler"    data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#distaque">Em Alta</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#filmes">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#series">Séries</a>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>
+    </header>
+    
+<main>
+
+    <!--carouselFade-->
+
+    <div class="container-fluid p-0">
+        <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://assetsio.gnwcdn.com/arcane-final-poster-16x9-no-text-no-border.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" alt="serie Arcane">
+                    <div class="carousel-caption">
+                        <h2>Arcane</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://blog.estantevirtual.com.br/wp-content/uploads/2020/08/Blog.11-07.png" alt="serie Impuros">
+                    <div class="carousel-caption">
+                        <h2>Impuros</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/uEDydl8_yHJ2eWnmn9BTsB03pAk=/0x0:800x450/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/G/v/fRWB7MSDAB3AcI4bfmpw/stranger-things-4-temporada-netflix-foto-divulgacao-widelg.jpg" alt="serie sgtranger things">
+                    <div class="carousel-caption">
+                        <h2>Stranger things</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://segredosdomundo.r7.com/wp-content/uploads/2020/05/as-melhores-series-da-netflix-3.jpg" alt="serie">
+                </div>
+            </div>
+            <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button" >
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+
+        <!--carouselSlide-->
+
+        <section id="distaque">
+            <div class="container">
+                <div id="corousel-destaque" class="carousel carousel-slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <h2>Em Alta</h2>
+                        <div data-bs-interval="5000" class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4>1</h4>
+                                        <a href="https://youtu.be/utgH7YV4qn8">
+                                            <img class="d-block w-100" src="https://recreio.com.br/media/_versions/2024/11/arcane_capa_widelg.jpg" alt="imagem da serie Arcane">
+                                        </a>
+                                        <h5>Arcane</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <h4>2</h4>
+                                        <a href="https://youtu.be/pSxooe9BHgI">
+                                            <img class="d-block w-100" src="https://revistacontinente.com.br/image/view/news/image/5323/mobile"  
+                                            alt="filme pinóquio">
+                                            
+                                        </a>
+                                        <h5>Pinóquio</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <h4>3</h4>
+                                        <a href="https://youtu.be/IOSP5uEbTUc">
+                                            <img class="d-block w-100 h-20" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1e46vF8akUzV3WAtAZUUTjKBWOTnqW9eJuQ&s" alt="Filme Joias Brutas">
+                                        </a>
+                                        <h5> Joias Brutas</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <h4>4</h4>
+                                        <a href="https://youtu.be/iTgk3WbTErk">
+                                            <img class="d-block w-100 h-20" src="https://f.i.uol.com.br/fotografia/2015/01/08/471747-970x600-1.jpeg" alt="imagem filme">
+                                        </a>
+                                        <h5>Em Busca da Perfeição</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-bs-interval="5000" class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h4>5</h4>
+                                        <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/Y_hpBuR-xxtPaF68EVL9n4cECDM=/0x0:1068x612/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/3/F/0VSv1nQM6htL8bAfALCw/captura-de-tela-30.01.2025-as-12.04.51-pm.png"  alt="">
+                                    </div>
+                                    <div class="col-3">
+                                        <h4>6</h4>
+                                        <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/Y_hpBuR-xxtPaF68EVL9n4cECDM=/0x0:1068x612/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/3/F/0VSv1nQM6htL8bAfALCw/captura-de-tela-30.01.2025-as-12.04.51-pm.png"  alt="">
+                                    </div>
+                                    <div class="col-3">
+                                        <h4>7</h4>
+                                        <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/Y_hpBuR-xxtPaF68EVL9n4cECDM=/0x0:1068x612/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/3/F/0VSv1nQM6htL8bAfALCw/captura-de-tela-30.01.2025-as-12.04.51-pm.png"  alt="">
+                                    </div>
+                                    <div class="col-3">
+                                        <h4>8</h4>
+                                        <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/Y_hpBuR-xxtPaF68EVL9n4cECDM=/0x0:1068x612/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/3/F/0VSv1nQM6htL8bAfALCw/captura-de-tela-30.01.2025-as-12.04.51-pm.png"  alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--sectionFilmes-row-col-card-->
+
+        <section id="filmes">
+            <div class="container p-4">
+                <h2>Filmes</h2>
+                    <div class="row g-5 pt-3">
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <article class="card text-bg-dark card border border-4">
+                                <header class="card-header">
+                                    <h4>Pinóquio</h4>
+                                </header>
+                                <img src="https://revistacontinente.com.br/image/view/news/image/5323/mobile" height="215px" alt="Filme Pinoquio">
+                                <div class="card-body">
+                                    <h5 class="card-title">Genero: Fantasia</h5>
+                                    <p class="card-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eaque alias veniam sunt, quaerat voluptatem inventore.</p>
+                                    <a href="#" class="btn btn-primary" >Assistir</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <article class="card text-bg-dark card border border-4">
+                                <header class="card-header">
+                                    <h4>Corra</h4>
+                                </header>
+                                <img src="https://s.zst.com.br/cms-assets/2024/07/corra-fime-terror-netflix.webp" height="215px" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Genero: Terror</h5>
+                                    <p class="card-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eaque alias veniam sunt, quaerat voluptatem inventore.</p>
+                                    <a href="#" class="btn btn-primary" >Assistir</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <article class="card text-bg-dark card border border-4">
+                                <header class="card-header">
+                                    <h4>Joias Brutas</h4>
+                                </header>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1e46vF8akUzV3WAtAZUUTjKBWOTnqW9eJuQ&s" height="215px" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Genero: Drama</h4>
+                                    <p class="card-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eaque alias veniam sunt, quaerat voluptatem inventore.</p>
+                                    <a href="#" class="btn btn-primary" >Assistir</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!--sectionSeries-row-col-card-->
+            <section id="series">
+                <div class="container p-4">
+                    <h2>Séries</h2>
+                    <div class="row g-5 pt-3">
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <article class="card text-bg-dark card border border-4">
+                                <header class="card-header">
+                                    <h4>Arcane</h4>
+                                </header>
+                                <img src="https://recreio.com.br/media/_versions/2024/11/arcane_capa_widelg.jpg" alt="imagem serie arcane">
+                                <div class="card-body">
+                                    <h4 class="card-title">Genero: Aventura</h4>
+                                    <p class="card-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eaque alias veniam sunt, quaerat voluptatem inventore.</p>
+                                    <a href="#" class="btn btn-primary" >Assistir</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <article class="card text-bg-dark card border border-4">
+                                <header class="card-header">
+                                    <h4>Arcane</h4>
+                                </header>
+                                <img src="https://recreio.com.br/media/_versions/2024/11/arcane_capa_widelg.jpg" alt="imagem serie arcane">
+                                <div class="card-body">
+                                    <h4 class="card-title">Genero: Aventura</h4>
+                                    <p class="card-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eaque alias veniam sunt, quaerat voluptatem inventore.</p>
+                                    <a href="#" class="btn btn-primary" >Assistir</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <article class="card text-bg-dark card border border-4">
+                                <header class="card-header">
+                                    <h4>Arcane</h4>
+                                </header>
+                                <img src="https://recreio.com.br/media/_versions/2024/11/arcane_capa_widelg.jpg" alt="imagem serie arcane">
+                                <div class="card-body">
+                                    <h4 class="card-title">Genero: Aventura</h4>
+                                    <p class="card-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos eaque alias veniam sunt, quaerat voluptatem inventore.</p>
+                                    <a href="#" class="btn btn-primary" >Assistir</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+    
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
